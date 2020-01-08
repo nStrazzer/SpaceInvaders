@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Progetto SpaceInvaders - Gr3 - Massone & Strazzer</title>
+<script>
+
+	function begin(){
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.moveTo(0, 0);
+		ctx.fillRect(150, 150, 20,20);
+		ctx.stroke();
+	}
+</script>
+<style>
+	body{
+		text-align: center;	
+		color: #eeeeee;
+	}
+	#myCanvas{
+		width:700px;
+		height:700px; 
+		border:1px solid #c3c3c3;
+	}
+</style>
+</head>
+<body onload="begin()">
+
+	<h1>Space Invaders</h1>
+	<canvas id="myCanvas" ></canvas>
+	
+	<footer>
+		<strong><p>Massone Lorenzo - Antonio Strazzer</p></strong>
+	</footer>
+</body>
+</html>
